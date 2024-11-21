@@ -9,7 +9,6 @@ using namespace std;
 class Directory : public FileSystemElement
 {
 private:
-	const string name;
 	vector<std::shared_ptr<FileSystemElement>> elements;
 	std::weak_ptr<Directory> parentDir;
 

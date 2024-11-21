@@ -6,7 +6,6 @@ using namespace std;
 class File : public FileSystemElement
 {
 private:
-	const string name;
 	const int size;
 private:
 	File(const File&) = delete;

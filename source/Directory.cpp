@@ -5,8 +5,9 @@
 using namespace std;
 
 Directory::Directory(const string& name, std::weak_ptr<Directory> parentDir)
-	: name(name), elements(), parentDir(parentDir)
+	: parentDir(parentDir)
 {
+	FileSystemElement::name = name;
 	elements.clear();
 }
 

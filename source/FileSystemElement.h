@@ -4,6 +4,9 @@
 using namespace std;
 class FileSystemElement
 {
+protected:
+	string name;
+
 public:
 	FileSystemElement();
 	virtual ~FileSystemElement();
